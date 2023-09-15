@@ -1,7 +1,6 @@
 .container {
-	max-width: 44.5rem;
 	margin-inline: auto;
-	margin-bottom: 4.3rem;
+	margin-bottom: 4.5rem;
 	padding-block: 5rem;
 	padding-inline: max(1.75rem, 6%);
 	display: flex;
@@ -19,12 +18,16 @@
 	}
 	&__form {
 		margin-bottom: 4.5rem;
+		max-width: 40rem;
 	}
 	&__image-dashboard {
 		width: 100%;
+		max-width: 40rem;
+		margin-inline: auto;
 	}
 }
 .footer {
+	margin-bottom: 2rem;
 	&__socials {
 		margin-bottom: 1.7rem;
 	}
