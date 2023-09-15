@@ -1,0 +1,107 @@
+$ff-franklin: "Libre Franklin", sans-serif;
+.f-heading,
+.f-paragraph,
+.f-btn,
+.f-copy {
+	font-family: $ff-franklin;
+	font-style: normal;
+}
+.f-heading {
+	color: #969696;
+	font-size: 1.375rem;
+	font-weight: 300;
+	line-height: 1.45;
+	text-align: center;
+	&--bold {
+		color: #15202a;
+		font-weight: 700;
+	}
+}
+.f-paragraph {
+	color: #15202a;
+	font-size: 0.75rem;
+	font-weight: 300;
+	line-height: 1.2;
+	&::placeholder {
+		color: #b8c7ed;
+	}
+}
+.f-btn {
+	color: #fff;
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+}
+.f-copy {
+	color: #969696;
+	font-size: 0.625rem;
+	font-weight: 300;
+	line-height: 1.2;
+	text-align: center;
+}
+.m-form {
+	width: 100%;
+	padding-inline: 1.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.63rem 1rem;
+	&__input,
+	&__btn {
+		padding-inline: 2rem;
+		padding-block: 0.63rem;
+		border-radius: 1.75rem;
+		border: 1px solid;
+	}
+	&__input {
+		flex: 1 1 17rem;
+		border-color: #c2d3ff;
+		background: #fff;
+		box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0);
+	}
+	&__btn {
+		flex: 1 1 auto;
+		min-width: fit-content;
+		border-color: #4c7bf3;
+		background: #4c7bf3;
+		box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+	}
+}
+.m-socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-inline: auto;
+	gap: 1rem;
+	&__item {
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		border: 1px solid rgba($color: #4c7bf3, $alpha: 0.15);
+		color: #4c7bf3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		& > svg {
+			height: 70%;
+		}
+	}
+}
+@media (min-width: 50rem) {
+	.f-heading {
+		font-size: 3rem;
+		line-height: 1.25;
+	}
+	.f-paragraph {
+		font-size: 1.25rem;
+		&--small {
+			font-size: 1rem;
+		}
+	}
+	.f-btn {
+		font-size: 1rem;
+	}
+	.f-copy {
+		font-size: 0.75rem;
+	}
+}

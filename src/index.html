@@ -24,11 +24,13 @@
 	<body>
 		<main class="container">
 			<img class="container__logo" src="assets/images/logo.svg" alt="logo" />
-			<h1 class="container__title">We are launching <span>soon!</span></h1>
-			<p class="container__text">Subscribe and get notified</p>
+			<h1 class="container__title f-heading">
+				We are launching <span class="f-heading--bold">soon!</span>
+			</h1>
+			<p class="container__text f-paragraph">Subscribe and get notified</p>
 			<form id="myform" class="container__form m-form" action="">
 				<input
-					class="m-form__input"
+					class="m-form__input f-paragraph f-paragraph--small"
 					type="email"
 					name="emailInput"
 					id="emailInput"
@@ -36,7 +38,7 @@
 					pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
 					required
 				/>
-				<button type="submit" id="submitButton" class="m-form__btn">
+				<button type="submit" id="submitButton" class="m-form__btn f-btn">
 					Notify Me
 				</button>
 			</form>
@@ -88,7 +90,7 @@
 					</svg>
 				</div>
 			</div>
-			<p class="footer__copy m-copyright">
+			<p class="footer__copy f-copy">
 				&copy; Copyright Ping. All rights reserved.
 			</p>
 			<p class="attribution">
