@@ -1,0 +1,1 @@
+const e=document.getElementById("emailInput"),t=document.getElementById("submitButton"),d=document.getElementById("myForm");t.addEventListener("click",t=>{e.validity.valid?d.classList.remove("js-error"):d.classList.add("js-error")});
