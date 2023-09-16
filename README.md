@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/Dantalian5/ping-coming-soon-page-master.git)
-- Live Site URL: [Live site (Vercel)](https://your-live-site-url.com)
+- Live Site URL: [Live site (Vercel)](https://ping-coming-soon-page-master-nine-pi.vercel.app/)
 
 ## My process
 
