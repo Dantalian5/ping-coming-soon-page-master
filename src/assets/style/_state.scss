@@ -1,0 +1,15 @@
+.js-error.m-form {
+	& .m-form__input {
+		border-color: #ff5466;
+	}
+	& .m-form__error {
+		display: block;
+	}
+}
+@media (hover: hover) {
+	.m-socials__item:hover {
+		pointer-events: auto;
+		color: #fff;
+		background-color: #4c7bf3;
+	}
+}

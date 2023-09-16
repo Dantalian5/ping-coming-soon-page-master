@@ -46,6 +46,8 @@ $ff-franklin: "Libre Franklin", sans-serif;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.63rem 1rem;
+	align-items: flex-start;
+	justify-content: center;
 	&__input,
 	&__btn {
 		padding-inline: 2rem;
@@ -54,10 +56,30 @@ $ff-franklin: "Libre Franklin", sans-serif;
 		border: 1px solid;
 	}
 	&__input {
-		flex: 1 1 17rem;
+		width: 100%;
 		border-color: #c2d3ff;
 		background: #fff;
 		box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0);
+		&--wrapper {
+			flex: 1 1 17rem;
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: inherit;
+		}
+	}
+	&__error {
+		display: none;
+		width: max-content;
+		margin-block: 0.36rem 0.65rem;
+		margin-inline: auto;
+		color: #ff5466;
+		font-family: $ff-franklin;
+		font-size: 0.625rem;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 2;
+		letter-spacing: 0.00781rem;
 	}
 	&__btn {
 		flex: 1 1 auto;
@@ -87,7 +109,7 @@ $ff-franklin: "Libre Franklin", sans-serif;
 		}
 	}
 }
-@media (min-width: 50rem) {
+@media (min-width: 37.5rem) {
 	.f-heading {
 		font-size: 3rem;
 		line-height: 1.25;
@@ -103,5 +125,18 @@ $ff-franklin: "Libre Franklin", sans-serif;
 	}
 	.f-copy {
 		font-size: 0.75rem;
+	}
+	.m-form {
+		&__input,
+		&__btn {
+			padding-inline: 1.88rem;
+			padding-block: 1.12rem;
+		}
+		&__error {
+			margin-left: 1.88rem;
+			line-height: 1.5;
+			letter-spacing: 0.00938rem;
+			font-size: 0.75rem;
+		}
 	}
 }
